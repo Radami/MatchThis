@@ -14,3 +14,10 @@ FlowRouter.route('/items', {
         BlazeLayout.render('MainLayout', {main: 'Items'});
   }
 });
+
+FlowRouter.route('/outfits', {
+    name: 'outfits',
+    action() {
+        BlazeLayout.render('MainLayout', {main: 'Outfits'});
+  }
+});

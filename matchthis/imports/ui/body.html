@@ -1,0 +1,21 @@
+<body>
+  <div class="container">
+    <header>
+      <h1>Match This</h1>
+    </header>
+
+    <form class="new-item">
+        <input type="text" name="text" placeholder="Type to add new item" />
+      </form>
+
+    <ul>
+      {{#each items}}
+        {{> item}}
+      {{/each}}
+    </ul>
+  </div>
+</body>
+
+<template name="item">
+  <li>{{text}}</li>
+</template>

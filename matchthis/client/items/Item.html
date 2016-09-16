@@ -1,0 +1,12 @@
+<template name="Item">
+    <article class="recipe">
+        <h3>{{name}}</h3>
+        {{#if editMode}}
+            {{> quickForm collection="Items" id=updateItemId type="update" doc=this autosave=true}}
+        {{else}}
+            <p>{{desc}}</p>
+        {{/if}}
+        <i class="fa fa-pencil"></i>
+        <i class="fa fa-trash"></i>
+    </article>
+</template>

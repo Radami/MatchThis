@@ -8,3 +8,10 @@ FlowRouter.route('/', {
         BlazeLayout.render('HomeLayout');
   }
 });
+
+FlowRouter.route('/items', {
+    name: 'items',
+    action() {
+        BlazeLayout.render('MainLayout', {main: 'Items'});
+  }
+});

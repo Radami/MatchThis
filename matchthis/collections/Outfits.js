@@ -21,6 +21,9 @@ OutfitSchema = new SimpleSchema({
     items: {
         type: [ Number ],
         label: "Item ids",
+        autoValue: function() {
+            return new Array();
+        },
         autoform: {
             type: "hidden"
         }

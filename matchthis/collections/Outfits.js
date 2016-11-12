@@ -19,7 +19,7 @@ OutfitSchema = new SimpleSchema({
         label: "Description"
     },
     items: {
-        type: [ Number ],
+        type: [ String ],
         label: "Item ids",
         autoValue: function() {
             return new Array();

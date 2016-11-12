@@ -6,7 +6,21 @@
         {{else}}
             <p>{{desc}}</p>
         {{/if}}
+
+        <p>Collections:</p>
+        <select id="{{this._id}}">
+            {{ register_session this._id null }}
+            <option value="Choose an outfit">Choose an outfit</option>
+            {{#each outfits}}
+                <option value="{{this._id}}">
+                    {{this.name}}
+                </option>
+            {{/each}}
+        </select>
+        <input type="button" class="add-to-outfit" value="Add" id="{{this._id}}"/>
+
         <i class="fa fa-pencil"></i>
         <i class="fa fa-trash"></i>
+
     </article>
 </template>

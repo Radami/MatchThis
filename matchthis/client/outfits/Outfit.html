@@ -4,10 +4,9 @@
         {{#if editMode}}
             {{> quickForm collection="Outfit" id=updateItemId type="update" doc=this autosave=true}}
         {{else}}
-            <p>{{desc}}</p>
+            <p>Description: {{desc}}</p>
         {{/if}}
-        <p>here</p>
-
+        <p>Items in this outfit:</p>
         {{#each outfitstoitems }}
             <p>{{name}}</p>
         {{/each}}

@@ -24,9 +24,6 @@ OutfitsToItems.attachSchema(OutfitsToItemsSchema);
 
 Meteor.methods({
 addItemToOutfit: function(outfit_id, item_id){
-    console.log(outfit_id);
-    console.log(item_id);
-    
     OutfitsToItems.insert({outfit_id: outfit_id, item_id: item_id});
 },
 });

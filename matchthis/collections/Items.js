@@ -25,5 +25,6 @@ Items.attachSchema(ItemSchema);
 Meteor.methods({
     deleteItem: function(id) {
         Items.remove(id);
+        OutfitsToItems.remove({item_id: id});
     },
 });

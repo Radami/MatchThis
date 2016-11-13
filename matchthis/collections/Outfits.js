@@ -18,9 +18,6 @@ OutfitSchema = new SimpleSchema({
         type: String,
         label: "Description"
     },
-    items: {
-        type: [Items]
-    },
     author: {
         type: String,
         label: "Author",

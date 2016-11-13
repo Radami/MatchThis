@@ -18,16 +18,6 @@ OutfitSchema = new SimpleSchema({
         type: String,
         label: "Description"
     },
-    items: {
-        type: [ String ],
-        label: "Item ids",
-        autoValue: function() {
-            return new Array();
-        },
-        autoform: {
-            type: "hidden"
-        }
-    },
     author: {
         type: String,
         label: "Author",
